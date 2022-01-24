@@ -7,14 +7,6 @@
     padding: 0;
 }
 
-h1 {
-    font-size: 48px;
-}
-
-p {
-    font-size: 20px;
-}
-
 /* header */
 header {
     width: 100%;
@@ -72,6 +64,14 @@ header .text {
     text-align: center;
 }
 
+header .text h1 {
+    font-size: 40px;
+}
+
+header .text p {
+    font-size: 20px;
+}
+
 header .indicator {
     position: relative;
     top: 10px;
@@ -101,7 +101,71 @@ header .indicator > li:not(:last-child) > div {
     border-right: 1px solid gray;
 }
 
+header .indicator li div .number {
+    font-size: 24px;
+}
+
+header .indicator li div p {
+    font-size: 20px;
+}
+
 /* main */
-    
+main .about {
+    width: 100%;
+    height: 601px;
+    background: #f1f2f3;
+}
+
+main .about .text {
+    padding: 116px 0 0 0;
+    text-align: center;
+}
+
+main > .about > .content {
+    display: flex;
+    justify-content: space-between;
+    width: 1280px;
+    padding: 50px 0 0 0;
+    margin: auto;
+}
+
+main > .about > .content > div {
+    flex: 1;
+    height: 302px;
+    background: white;
+}
+
+main > .about > .content > div:not(:last-child) {
+    margin-right: 20px;
+}
+
+main .about .content div .icon {
+    text-align: center;
+    margin: 36px 0 0 0;
+}
+
+main .about .content div .icon h2 {
+    font-size: 18px;
+    padding: 7px;
+}
+
+main .about .content div .icon p {
+    font-size: 14px;
+}
+
+main .about .content div .button {
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+main .about .content div button {
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    background: #2F7AF4;
+    border: none;
+    color: white;
+}
+
 
 /* footer */
