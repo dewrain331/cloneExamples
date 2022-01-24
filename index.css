@@ -7,11 +7,20 @@
     padding: 0;
 }
 
+h1 {
+    font-size: 48px;
+}
+
+p {
+    font-size: 20px;
+}
+
 /* header */
 header {
     width: 100%;
     height: 718px;
     background: url(img/header.png);
+    color: white;
 }
 
 header .menu {
@@ -56,3 +65,43 @@ header .menu ul {
 header .menu ul li {
     margin-left: 84px;
 }
+
+header .text {
+    width: 100%;
+    margin: 231px auto 231px auto;
+    text-align: center;
+}
+
+header .indicator {
+    position: relative;
+    top: 10px;
+    display: flex;
+    background: white;
+    width: 1280px;;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+header .indicator li {
+    flex: 1;
+    height: 132px;;
+}
+
+header .indicator li div {
+    margin: 37px 0 0 0;
+    text-align: center;;
+    height: 57px;
+}
+
+header .indicator li div p {
+    color: black;
+}
+
+header .indicator > li:not(:last-child) > div {
+    border-right: 1px solid gray;
+}
+
+/* main */
+    
+
+/* footer */
