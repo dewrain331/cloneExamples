@@ -1,0 +1,83 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+header > div {
+    margin: 25px 0;
+}
+
+#logodiv > h2 {
+    font-size: 2rem;
+}
+
+#submitdiv {
+    width: 350px;
+    text-align: center;
+}
+
+#submitdiv input {
+    width: 80%;
+    outline: none;
+    padding: 8px;
+    border: 1px solid lightgray;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
+}
+
+#submitdiv input:focus {
+    box-shadow: 0 0 5px #e22865;
+    border: 1px solid #e22865;
+}
+
+#submitdiv button {
+    cursor: pointer;
+    padding: 8px;
+    width: fit-content;
+    transition: 1s;
+    outline: none;
+    background-color: lightgray;
+    border: 1px solid lightgray;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#submitdiv button:hover {
+    background-color: transparent;
+    color: white;
+}
+
+
+@media(max-width: 768px) {
+    header {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #logodiv > h2 {
+        margin: 10px 0;
+    }
+
+    #submitdiv {
+        width: 100%;
+    }
+}
+
+@media(max-width: 480px) {
+    #submitdiv input {
+        width: 74%;
+    }
+}
+
+@media(max-width: 320px) {
+    #submitdiv input {
+        width: 60%;
+    }
+}

@@ -1,0 +1,490 @@
+/* deafult */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+/* header */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 999;
+    height: 64px;
+    padding: 0 24px 0 24px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    max-width: 132px;
+    flex: 1 1 auto;
+    height: 100%;
+    margin-right: 16px;
+}
+
+#logo img {
+    max-width: 132px;
+    max-height: 40px;
+    width: auto;
+    height: 100%;
+    margin-top: 12px;
+}
+
+#mainmenu {
+    flex: 10 1 auto;
+    height: 100%;
+}
+
+#mainmenu ul {
+    display: flex;
+    list-style: none;
+    margin: auto;
+    padding: 0;
+}
+
+#mainmenu ul li {
+    padding: 20px 16px 16px 16px;
+}
+
+#mainmenu ul li a {
+    text-decoration: none;
+    color: rgb(82, 79, 161);
+    font-weight: bold;
+    font-size: 0.875rem
+}
+
+#sidemenu {
+    flex: 3 1 auto;
+    display: flex;
+    align-items: center;
+    max-width: 177px;
+    height: 100%;
+    margin-left: 16px;
+}
+
+#sidemenu a {
+    text-decoration: none;
+    color: rgb(82, 79, 161);
+    font-weight: bold;
+    font-size: 14px;
+    padding: 0 12px 0 12px;
+}
+
+#mobilemenu {
+    display: none;
+}
+
+#mobilemenu > .hamburger {
+    width: 20px;
+    border: 2px solid black;
+    margin: 5px;
+}
+
+   /* mediaquery */
+@media (max-width: 800px) {
+    #mainmenu {
+        display: none;
+    }
+
+    #sidemenu {
+        display: none;
+    }
+
+    #mobilemenu {
+        display: inline-block;
+        cursor: pointer;
+        margin: 15px 30px 0 0;
+    }
+
+    .open {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* main */
+#home {
+    display: flex;
+    align-items: center;
+    height: 940px;
+    background-image: url(https://cdn-front-door.elice.io/landing/static/media/home-fullcover.9cbc2eac.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    padding: 0 90px 0 90px;
+}
+
+#home .content {
+    width: 1200px;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    margin: auto;
+}
+
+#home .content p {
+    line-height: 30px;
+}
+
+#home .content .button button:nth-child(1) {
+    width: 176px;
+    height: 48px;
+    background: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border-style: none;
+    padding: 0 16px 0 16px;
+}
+
+#home .content .button button:nth-child(2) {
+    width: 268px;
+    height: 48px;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid white;
+    padding: 0 16px 0 16px;
+}
+
+#platform {
+    display: flex;
+    height: 873px;
+}
+
+#platform > .content {
+    width: 1230px;
+    display: flex;
+    height: 540px;
+    margin: auto;
+}
+
+#platform > .content > div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 4 1 auto;
+    max-width: 544px;
+    line-height: 60px;
+}
+
+#platform > .content > div:nth-child(1) > div:nth-child(1) {
+    width: 55px;
+    height: 32px;
+    background: rgba(82, 79, 161, 0.2);
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(82, 79, 161);
+    text-align: center;
+    line-height: 30px;
+}
+
+#platform > .content > div:nth-child(1) > div:nth-child(2) {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#platform > .content > div:nth-child(1) > div:nth-child(3) {
+    font-size: 16px;
+    line-height: 10px;
+}
+
+#platform > .content > div:nth-child(1) > div:nth-child(4) {
+    font-size: 16px;
+    color: rgb(82, 79, 161);
+    font-weight: bold;
+}
+
+#platform > .content > div:nth-child(2) {
+    flex: 1 1 auto;
+}
+
+#platform > .content > div:nth-child(3) {
+    flex: 4 1 auto;
+    max-width: 544px;
+    background: url(https://cdn-front-door.elice.io/landing/static/media/home-platform.de0651a2.png);
+}
+
+#progress {
+    display: flex;
+    height: 873px;
+    background: rgb(248, 248, 255);
+}
+
+#progress > .content {
+    width: 1230px;
+    display: flex;
+    height: 540px;
+    margin: auto;
+}
+
+#progress > .content > div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 4 1 auto;
+    max-width: 600px;
+    line-height: 60px;
+}
+
+#progress > .content > div:nth-child(1) > div:nth-child(1) {
+    width: 72px;
+    height: 32px;
+    background: rgba(82, 79, 161, 0.2);
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(82, 79, 161);
+    text-align: center;
+    line-height: 30px;
+}
+
+#progress > .content > div:nth-child(1) > div:nth-child(2) {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+#progress > .content > div:nth-child(1) > div:nth-child(3) {
+    font-size: 16px;
+    line-height: 10px;
+}
+
+#progress > .content > div:nth-child(1) > div:nth-child(4) {
+    font-size: 16px;
+    color: rgb(82, 79, 161);
+    font-weight: bold;
+}
+
+#progress > .content > div:nth-child(2) {
+    flex: 1 1 auto;
+}
+
+#progress > .content > div:nth-child(3) {
+    flex: 4 1 auto;
+    max-width: 544px;
+    background-image: url(https://cdn-front-door.elice.io/landing/static/media/home-curriculum.e345afe8.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    padding: 0 90px 0 90px;
+}
+
+#field {
+    display: flex;
+    height: 920px;
+}
+
+#field > .content {
+    width: 1230px;
+    display: flex;
+    height: 540px;
+    margin: auto;
+}
+
+#field > .content > div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 4 1 auto;
+    max-width: 600px;
+    line-height: 60px;
+}
+
+#field > .content > div:nth-child(1) > div:nth-child(1) {
+    width: 72px;
+    height: 32px;
+    background: rgba(82, 79, 161, 0.2);
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(82, 79, 161);
+    text-align: center;
+    line-height: 30px;
+}
+
+#field > .content > div:nth-child(1) > div:nth-child(2) {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+#field > .content > div:nth-child(1) > div:nth-child(3) {
+    font-size: 16px;
+    line-height: 10px;
+}
+
+#field > .content > div:nth-child(1) > div:nth-child(4) {
+    font-size: 16px;
+    color: rgb(82, 79, 161);
+    font-weight: bold;
+}
+
+#field > .content > div:nth-child(2) {
+    flex: 1 1 auto;
+}
+
+#field > .content > div:nth-child(3) {
+    flex: 4 1 auto;
+    max-width: 544px;
+    background-image: url(https://cdn-front-door.elice.io/landing/static/media/home-sites.53f39073.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    padding: 0 90px 0 90px;
+}
+
+#prize {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 512px;
+}
+
+#prize > div:nth-child(1) {
+    flex: 1 1 auto;
+    max-height: 150px;
+    width: 1000px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#prize > div:nth-child(1) > div:nth-child(1) {
+    width: 252px;
+    height: 91px;
+    background-image: url(https://cdn-front-door.elice.io/landing/static/media/home-prize-e-learning.5f43a140.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+#prize > div:nth-child(1) > div:nth-child(2) {
+    width: 252px;
+    height: 91px;
+    background-image: url(https://cdn-front-door.elice.io/landing/static/media/home-prize-e-learning.5f43a140.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+#prize > div:nth-child(1) > div:nth-child(3) {
+    width: 252px;
+    height: 91px;
+    background-image: url(https://cdn-front-door.elice.io/landing/static/media/home-prize-e-learning.5f43a140.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+
+#prize > div:nth-child(2) {
+    flex: 1 1 auto;
+    max-height: 150px;
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#prize > div:nth-child(2) > div:nth-child(1) {
+    width: 252px;
+    height: 91px;
+    background-image: url(https://cdn-front-door.elice.io/landing/static/media/home-prize-e-learning.5f43a140.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+#prize > div:nth-child(2) > div:nth-child(2) {
+    width: 252px;
+    height: 91px;
+    background-image: url(https://cdn-front-door.elice.io/landing/static/media/home-prize-e-learning.5f43a140.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+#try {
+    height: 287px;
+    background-image: url(https://cdn-front-door.elice.io/landing/static/media/second-bg-oval.8f4cd4e7.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    display: flex;
+}
+
+#try div {
+    width: 1300px;
+    margin: auto;
+    text-align: center;
+}
+
+#try div > p:nth-child(1) {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#try div > p:nth-child(2) {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#try div > button {
+    width: 176px;
+    height: 48px;
+    background: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border-style: none;
+    padding: 0 16px 0 16px;
+    margin-top: 30px;
+}
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 247px;
+}
+
+footer > #submenu {
+    width: 1230px;
+    display: flex;
+}
+
+footer > #submenu div {
+    margin-right: 20px;
+    font-size: .75rem
+}
+
+footer > #submenu > div:nth-child(6) {
+    font-weight: bold;
+    color: #524fa1;
+}
+
+footer > #info {
+    width: 1230px;
+    margin-top: 20px;
+    color: #a8a9ab;
+    font-size: .75rem;
+    line-height: 10px;
+}
+
+footer > #info > p:nth-child(1) {
+    font-weight: bold;
+}
