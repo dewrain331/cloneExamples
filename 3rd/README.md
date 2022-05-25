@@ -1,4 +1,4 @@
-## 클론코딩 예제
+## 3rd 클론코딩 예제
 1. 제작기간 : 22.02.07 ~ 22.02.10
 2. 예제 : https://www.youtube.com/watch?v=e56H5n1SvEs
 3. 사용한 기술/패키지 : html, css, js
