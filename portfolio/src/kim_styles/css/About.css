@@ -1,0 +1,47 @@
+.mainBody {
+    margin: 40px;
+    line-height: 3;
+}
+
+.title {
+    color: rgb(126, 126, 126);
+    font-size: 12px;
+}
+
+.articles {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    line-height: 2;
+}
+
+.articles h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.canDo {
+    display: flex;
+    justify-content: space-around;
+    width: 900px;
+    height: 200px;
+}
+
+.canDo .items {
+    width: 200px;
+    height: 100%;
+    box-shadow: 5px 5px rgba(0,0,0,0.3);
+    padding: 30px 15px 15px 15px;
+    line-height: 50px;
+}
+
+.canDo .items:nth-child(1) {
+    border-bottom: 3px solid rgb(0, 110, 255);
+}
+
+.canDo .items:nth-child(2) {
+    border-bottom: 3px solid orange;
+}
+
+.canDo .items:nth-child(3) {
+    border-bottom: 3px solid purple;
+}

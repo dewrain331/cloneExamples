@@ -1,0 +1,61 @@
+.mainBody {
+    margin: 40px;
+    line-height: 3;
+}
+
+.title {
+    color: rgb(126, 126, 126);
+    font-size: 12px;
+}
+
+.articles {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    line-height: 2;
+}
+
+.visual {
+    display: flex;
+    align-items: center;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 800px;
+    height: 500px;
+}
+
+.chart {
+    display:inline-block;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: conic-gradient(rgb(0, 110, 255) 0% 60%, orange 60% 70%, purple 70% 75%, green 75% 100%);
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+
+.skills .items {
+    width: 350px;
+    height: 40%;
+    padding: 20px;
+    line-height: 1.8;
+}
+
+.skills .items:nth-child(1) {
+    border: 3px solid rgb(0, 110, 255);
+}
+
+.skills .items:nth-child(2) {
+    border: 3px solid orange;
+}
+
+.skills .items:nth-child(3) {
+    border: 3px solid purple;
+}
+
+.skills .items:nth-child(4) {
+    border: 3px solid green;
+}
